@@ -1,11 +1,205 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>无线网络认证技术服务</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人技术学习与开源工具分享</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+            background-color: #f7f8fa;
+            color: #333;
+            line-height: 1.8;
+            padding: 0 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            font-size: 32px;
+            color: #222;
+            margin-bottom: 30px;
+            border-left: 6px solid #4285f4;
+            padding-left: 16px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #333;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        h3 {
+            font-size: 18px;
+            color: #444;
+            margin: 25px 0 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+        ul {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #f1f8ff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #4285f4;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<h2>无线网络认证技术服务</h2>
-<p>专注于WiFi网络接入认证、网络验证技术研发与测试，提供专业的无线网络技术支持服务，仅用于技术测试使用。</p>
+<div class="container">
+    <h1>个人技术学习与开源工具分享</h1>
+    <p class="text-center">专注于技术学习、知识整理、开源工具分享 | 非商业、非盈利、无广告</p>
+
+    <div class="section">
+        <h2>一、站点介绍</h2>
+        <p>本站是一个纯粹的个人技术学习与知识整理站点，创建于2025年，主要用于记录和分享嵌入式开发、Linux系统操作、网络技术、硬件调试、开源软件等方向的学习笔记与实践经验。</p>
+        <p>本站所有内容均为作者个人学习过程中的总结与记录，不代表任何商业机构、企业或组织。</p>
+        <p>本站的建立初衷是为了沉淀个人技术知识，方便自我查阅与回顾，同时也为广大技术爱好者提供免费、开放、无门槛的学习参考，共同交流进步。</p>
+    </div>
+
+    <div class="section">
+        <h2>二、主要内容板块</h2>
+
+        <h3>2.1 Linux 系统学习</h3>
+        <p>Linux系统基础命令学习、常用服务部署、权限管理、进程管理、日志分析、Shell脚本编写、系统优化等内容记录。</p>
+        <ul>
+            <li>Linux常用命令详解与实际使用案例</li>
+            <li>Shell脚本自动化工具编写教程</li>
+            <li>Linux服务部署与环境配置实践记录</li>
+            <li>系统性能监控与故障排查经验总结</li>
+        </ul>
+
+        <h3>2.2 嵌入式开发技术</h3>
+        <p>嵌入式设备开发、硬件调试、固件编译、驱动调试、开源硬件使用等相关学习笔记与实践记录。</p>
+        <ul>
+            <li>OpenWrt系统编译与配置教程</li>
+            <li>ARM架构设备开发与调试经验</li>
+            <li>开源硬件驱动适配与功能测试</li>
+            <li>嵌入式设备系统优化与稳定性测试</li>
+        </ul>
+
+        <h3>2.3 网络技术基础</h3>
+        <p>计算机网络基础原理、网络配置、局域网管理、网络协议分析、网络设备调试等基础知识学习记录。</p>
+        <ul>
+            <li>TCP/IP协议基础原理学习</li>
+            <li>局域网配置与设备连接管理</li>
+            <li>网络故障排查与诊断方法</li>
+            <li>网络安全基础与防护常识</li>
+        </ul>
+
+        <h3>2.4 开源工具使用</h3>
+        <p>各类开源软件、开源工具的安装、配置、使用与二次开发记录，为技术爱好者提供实用参考。</p>
+        <ul>
+            <li>开源软件开发工具使用教程</li>
+            <li>免费工具部署与环境配置</li>
+            <li>开源项目编译与运行指南</li>
+            <li>工具使用问题与解决方案整理</li>
+        </ul>
+
+        <h3>2.5 编程基础学习</h3>
+        <p>Python、C语言、HTML、CSS、JavaScript等基础编程知识学习记录，适合入门级技术爱好者参考。</p>
+    </div>
+
+    <div class="section">
+        <h2>三、站点使用说明</h2>
+        <div class="highlight">
+            <p><strong>重要声明：</strong>本站为<strong>纯个人非盈利学习站点</strong>，仅用于技术学习与知识分享，<strong>不提供盈利活动、不对外运营</strong>。</p>
+        </div>
+        <p>本站所有内容仅供学习与参考使用，不构成任何技术建议、商业建议或操作指导，用户根据本站内容进行操作所产生的一切后果由用户自行承担。</p>
+        <p>本站不保证所有内容的绝对正确性，部分内容为个人学习过程中的理解与总结，可能存在偏差或错误，仅供交流使用。</p>
+        <p>本站欢迎广大技术爱好者自由浏览、学习、交流，但禁止任何机构或个人将本站内容用于商业用途、侵权行为或非法活动。</p>
+    </div>
+
+    <div class="section">
+        <h2>四、联系方式</h2>
+        <p>本站仅用于技术交流与学习分享，作者会不定期更新学习内容，欢迎技术爱好者共同交流。</p>
+        <p>联系渠道：通过GitHub主页留言交流，仅接受技术学习相关问题咨询等相关内容。</p>
+        <p>交流范围：Linux系统、嵌入式开发、网络技术、开源工具、编程基础等技术学习相关内容。</p>
+        <p>回复时间：由于是个人维护，无法保证即时回复，会在空闲时间统一查看与回复技术交流信息。</p>
+    </div>
+
+    <div class="section">
+        <h2>五、隐私政策说明</h2>
+        <p>本站高度重视用户隐私保护，严格遵守相关法律法规要求，制定本隐私政策，明确本站对用户信息的使用与保护原则。</p>
+        <h3>5.1 信息收集说明</h3>
+        <p>本站为静态学习站点，<strong>不收集任何用户个人信息</strong>，包括但不限于姓名、手机号、邮箱、设备信息、位置信息等。</p>
+        <p>本站不使用任何数据统计工具、分析工具、追踪代码，不会记录任何用户的浏览行为与设备信息。</p>
+
+        <h3>5.2 信息使用说明</h3>
+        <p>因本站不收集任何用户信息，因此不存在任何用户信息的使用、存储、传输、共享等行为。</p>
+        <p>本站不会向任何第三方提供、转让、出售用户信息。</p>
+
+        <h3>5.3 隐私政策更新</h3>
+        <p>本站如需更新隐私政策，会在本页面统一公示，更新后的政策自发布之日起生效。</p>
+        <p>本政策最后更新时间：2026年03月20日</p>
+    </div>
+
+    <div class="section">
+        <h2>六、版权与免责声明</h2>
+        <h3>6.1 版权声明</h3>
+        <p>本站所有原创内容版权归作者所有，欢迎个人学习使用，转载请注明出处。</p>
+        <p>本站部分内容参考开源文档、官方手册与公开技术资料，如有侵权，请联系删除。</p>
+
+        <h3>6.2 免责声明</h3>
+        <p>本站所有内容仅供学习交流使用，不构成任何操作建议，用户根据本站内容进行操作需自行承担风险。</p>
+        <p>本站不保证内容的完整性、准确性与时效性，不对用户因使用本站内容产生的任何损失承担责任。</p>
+        <p>本站严禁用于任何非法用途，用户因非法使用本站内容所产生的一切法律责任由用户自行承担。</p>
+    </div>
+
+    <div class="section">
+        <h2>七、非商业用途确认</h2>
+        <p><strong>本站郑重确认：</strong></p>
+        <p>1. 本站为个人学习笔记站点。</p>
+        <p>2. 本站所有内容免费开放给技术爱好者学习使用。</p>
+        <p>3. 本站仅用于个人技术沉淀与知识分享，符合GitHub Pages托管规则与各类平台对非商业站点的要求。</p>
+    </div>
+
+    <div class="section">
+        <h2>八、学习与交流理念</h2>
+        <p>技术的进步源于开放与分享，本站始终坚持开源、免费、开放的理念。</p>
+        <p>在学习技术的道路上，不断积累、不断总结、不断进步，是本站创建的核心初衷。</p>
+        <p>希望每一位访问本站的技术爱好者都能有所收获，共同学习，共同成长，共同进步。</p>
+    </div>
+
+    <div class="footer">
+        © 2026 个人技术学习与开源工具分享 | 版权所有 | 纯个人非商业站点 | 仅用于学习交流
+    </div>
+</div>
 </body>
 </html>
